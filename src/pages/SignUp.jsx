@@ -7,6 +7,7 @@ import {db} from '../firebase.config'
 import {setDoc, doc, serverTimestamp} from 'firebase/firestore'
 import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import OAuth from '../components/OAuth';
 
 
 function SignUp() {
@@ -76,6 +77,8 @@ function SignUp() {
                 </div>
             </form>
 
+
+            <OAuth />
             <Link to={'/sign-in'} className="registerLink">
                 Sign In Instead
             </Link>
